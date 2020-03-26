@@ -1,1 +1,2 @@
-# parcel-redux-example
+yarn install
+yarn start
