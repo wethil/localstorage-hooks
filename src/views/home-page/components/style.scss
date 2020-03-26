@@ -1,0 +1,130 @@
+
+.tabWrapper{
+  min-height: 610px;
+  margin-top: 5%;
+  b {
+    padding-right: 10px;
+  }
+}
+
+.checkBoxWrapper {
+  display: flex;
+  position: relative;
+  padding-left: 26px;
+  margin-left: 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+     input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      } 
+    .checkbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #eee;
+      border-radius: 50%;
+
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+          top: 6px;
+          left: 6px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: white;
+        }
+  }
+}
+
+.checkBoxWrapper:hover input ~ .checkbox {
+  background-color: #E0E0E0;
+}
+
+.checkBoxWrapper input:checked ~ .checkbox {
+  background-color: #2196F3;
+}
+
+.checkBoxWrapper input:checked ~ .checkbox:after {
+  display: block;
+}
+
+.noLeftMargin{
+  margin-left: 0px;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+}
+}
+.expireDate{
+  input {
+    width: 70px;
+  }
+}
+
+.codes{
+  label {
+    width: 50%;
+  }
+}
+
+.DayPickerInput input {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; 
+}
+
+
+.DayPicker-Day, .DayPicker-Caption, .DayPicker-NavBar{
+  font-size: 15px;
+}
+
+.nextButtonOnDateTab{
+  bottom: 20%;
+  right: 30%;
+  position: absolute;
+}
+
+
+
+.roomOptions{
+  margin-top: 5%;
+  .option {
+  font-weight: bold;
+}
+.selection{
+  display: flex;
+  min-width: 200px;
+}
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
